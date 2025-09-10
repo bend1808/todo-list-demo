@@ -1,0 +1,85 @@
+/* Background toàn trang */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: url("https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/535279221_1441435030239980_3704275932542980802_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=yT9H3xLocvEQ7kNvwHrlk6g&_nc_oc=Adkk7NFCtMIXakAzp7g5Sdiw6pIht_Z4nUFVEkmxoX50rCOtdWYuyx1o9vtG89favNw&_nc_zt=23&_nc_ht=scontent-dfw5-2.xx&_nc_gid=LY8wTaYVSrZf_quhcWgwSg&oh=00_AfbiY7J9nNJb_gcINxWSB9XSe_C6Fc6qbi0byKF5Ehureg&oe=68C6B7D2") no-repeat center center fixed;
+  background-size: contain;
+  color: #333;
+}
+
+/* Container có nền mờ (đọc dễ hơn) */
+#app {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Tiêu đề */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Input + Button */
+#taskInput {
+  width: 65%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+/* Nút Thêm */
+#addBtn {
+  background-color: #27ae60;
+}
+#addBtn:hover {
+  background-color: #2ecc71;
+}
+
+/* Nút Verify */
+.item-actions button:first-child {
+  background-color: #2980b9;
+}
+.item-actions button:first-child:hover {
+  background-color: #3498db;
+}
+
+/* Nút Xoá */
+.item-actions button:last-child {
+  background-color: #c0392b;
+}
+.item-actions button:last-child:hover {
+  background-color: #e74c3c;
+}
+
+/* Todo List */
+#todoList {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Khi Verify */
+li.done {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
